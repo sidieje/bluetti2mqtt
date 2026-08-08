@@ -7,7 +7,7 @@ COPY rootfs /
 
 # Install fork bluetti_mqtt version 0.16.1
 RUN apk add --no-cache git \
-    && pip install --no-cache-dir git+https://github.com/semitop7/bluetti_mqtt.git \
+    && pip install --no-cache-dir git+https://github.com/sidieje/bluetti_mqtt.git \
     && chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
